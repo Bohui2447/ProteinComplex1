@@ -1,1 +1,0 @@
-# Build Deep learning model and obtained 32 features from last layer, then combine MSB paper data to build SVM model
