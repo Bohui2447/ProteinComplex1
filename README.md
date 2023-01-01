@@ -1,5 +1,5 @@
 # ProteinComplex1
-This work were conducted under R version 3.5.1
+This work was conducted under R version 3.5.1
 First download the data from "Link" and save them in the current working directory
 
 ## Install functions used in this project
