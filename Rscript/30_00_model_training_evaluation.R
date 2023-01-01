@@ -10,8 +10,8 @@ library(ROCR)
 
 ### loading data
 # First Download the data and save them in the current working directory
-load("./10_00_MSBdataExpr_MSBTrain.Rdata")
-load("./10_00_MSBdataExpr_MSBValidation.Rdata") 
+load("./TrainingDataset.Rdata")
+load("./ValidationDataset.Rdata") 
 
 #### Hyperparameter searching (this will take a lot of time)
 # In this study, instead of using the for loop, we submitted slurm batch jobs 
@@ -97,10 +97,10 @@ t0 = system.time({
 
 ### Prediction and evaluation
 # Loading the test dataset
-load('./12_03_MSBdataExpr_Combine_TextValidation.Rdata')
+load('./TestDataset.Rdata')
 
 # Loading the best model
-model = load_model_hdf5('12_02_model_18_seed186720_350_0.438_140_0.214_25_0.037_model.h5_model.h5')
+model = load_model_hdf5('TheBestModel.h5')
 
 
 # model prediction
