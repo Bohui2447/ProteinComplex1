@@ -9,15 +9,13 @@ library(purrr)
 library(ROCR)
 
 ### loading data
-# load("../Rdata/10_00_MSBdataExpr_MSBTrain.Rdata")
-# load("../Rdata/10_00_MSBdataExpr_MSBValidation.Rdata") 
 # First Download the data and save them in the current working directory
 load("./10_00_MSBdataExpr_MSBTrain.Rdata")
 load("./10_00_MSBdataExpr_MSBValidation.Rdata") 
 
 #### Hyperparameter searching (this will take a lot of time)
 # In this study, instead of using the for loop, we submitted slurm batch jobs 
-# to the HPC of Utrecht University to dramatically reduce the time.
+# to the HPC of Utrecht University to dramatically reduce the training time.
 set.seed(1234)
 seeds = sample(1:1000000, 40, replace = F)
 for(seed in seeds){
@@ -62,7 +60,7 @@ for(seed in seeds){
 }
 
 
-### The best model parameters
+### The paramaters for the best model used in our paper
 params = list(dropOut1 = 0.438,
               dropOut2 = 0.214,
               dropOut3 = 0.037,
