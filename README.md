@@ -14,6 +14,6 @@ library(keras)
 
 # Download dataset for model training
 https://uu.figshare.com/articles/dataset/Dataset_for_protein_complexes_project/22043474
-This website contains three datasets (training dataset, testing dataset, and validation dataset) and a deepling model (the best model used in the manuscirpt to predict the protein-protein interaction).
+This website contains three datasets (training dataset, testing dataset, and validation dataset) and a deep learning model (the best model used in the manuscirpt to predict the protein-protein interaction).
 
 Then download and open the 30_00_model_training_evaluation.R in Rscript and run the code for reproducing  
