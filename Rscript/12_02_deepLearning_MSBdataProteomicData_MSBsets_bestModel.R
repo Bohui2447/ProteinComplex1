@@ -76,7 +76,7 @@ params = list(dropOut1 = round(runif(N, 0, 0.5), digits = 3),
     set.seed(123)
     history = model %>% fit(
       trainNorm, as.numeric(trainlables),
-      epochs = 50,
+      epochs = 10,
       # epochs = 5,
       verbose = 1,
       batch_size = 2048,
