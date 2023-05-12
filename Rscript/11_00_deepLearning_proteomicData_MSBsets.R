@@ -72,7 +72,7 @@ for(ni in 1:N){
     set.seed(123)
     history = model %>% fit(
       trainNorm, as.numeric(trainlables),
-      epochs = 50,
+      epochs = 10,
       verbose = 1,
       batch_size = 2048,
       validation_data = list(valNorm, as.numeric(vallabels))
