@@ -87,7 +87,7 @@ for(ni in 1:N){
   ## train the model
   set.seed(123)
   history = model %>% fit(x_train, as.numeric(y_train), #epochs=30, batch_size=10000, 
-                          epochs = 50,
+                          epochs = 10,
                           verbose = 1,
                           validation_data = list(x_test, as.numeric(y_test)))
   
